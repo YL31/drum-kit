@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 body {
     background: url(../img/vitalii-khodzinskyi-unsplash.jpg) center no-repeat;
     background-size: cover;
@@ -9,7 +13,8 @@ body {
 div#drum-keys {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-flow: row wrap;
     height: 100%;
     width: 100%;
 }
@@ -20,9 +25,30 @@ div#drum-keys {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    border: solid crimson;
+    border: solid rgb(57, 57, 57) 2px;
+    font-family: Verdana, sans-serif;
+    color: white;
+    background: rgba(0, 0, 0, .50);
     padding: 10px 30px;
     margin: 10px 30px;
     max-width: 30px;
+}
 
+kbd {
+    font-family: Arial, sans-serif;
+    font-size: 1.75em;
+    font-weight: bold;
+    color: red;
+}
+
+.sound {
+    font-family: verdana, sans serif;
+    font-variant: small-caps;
+}
+
+.playing {
+    border: solid orangered 3px;
+    transition: all .5s ease-out;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 2px orangered;
 }
